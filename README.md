@@ -7,3 +7,13 @@
 ## Redux ExampleのTodo Listをはじめからていねいに(1)
 
 * https://qiita.com/xkumiyu/items/9dfe51d2bcb3bdb06da3
+
+
+
+
+## デバック
+https://github.com/facebook/react-devtools/blob/master/README.md#the-react-tab-doesnt-show-up
+
+
+## ReactNaticeサンプル
+https://github.com/fumiyasac/AnimationStyleSampleReactNative

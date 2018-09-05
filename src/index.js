@@ -1,11 +1,19 @@
 import React from 'react';
 import { render } from 'react-dom';
-import { Provider } from 'react-redux';
 import { createStore } from 'redux';
-import todo from './reducers';
+import { Provider } from 'react-redux';
 import App from './components/App';
+import todos from './reducers/todos';
+import { addTodo } from './actions';
 
-let store = createStore(todo);
+let store = createStore(todos);
+
+store.dispatch(addTodo('Hello React!!!!'));
+store.dispatch(addTodo('Hello Redux!!!!'));
+
+console.log('--------');
+console.log(store.getState());
+console.log('--------');
 
 render(
   <Provider store={store}>

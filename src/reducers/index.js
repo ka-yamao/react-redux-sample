@@ -1,13 +1,5 @@
-const todo = (state, action) => {
-  switch (action.type) {
-    case 'ADD_TODO':
-      return {
-        id: action.id,
-        text: action.text
-      };
-    default:
-      return state;
-  }
-};
-
-export default todo;
+import { combineReducers } from 'redux';
+import todos from './todos';
+var hoge = { id: 'a' };
+const todoApp = combineReducers({ todos, hoge });
+export default todoApp;
