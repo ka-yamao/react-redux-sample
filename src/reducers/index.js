@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux';
 import todos from './todos';
-var hoge = { id: 'a' };
-const todoApp = combineReducers({ todos, hoge });
+import visibilityFilter from './visibilityFilter';
+const todoApp = combineReducers({ todos, visibilityFilter });
 export default todoApp;
